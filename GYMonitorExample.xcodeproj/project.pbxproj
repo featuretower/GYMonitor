@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC132F021D85AE2C005793E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC132F011D85AE2C005793E1 /* main.m */; };
+		FC132F051D85AE2C005793E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC132F041D85AE2C005793E1 /* AppDelegate.m */; };
+		FC132F0D1D85AE2C005793E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC132F0C1D85AE2C005793E1 /* Assets.xcassets */; };
+		FC132F471D85B0CB005793E1 /* GYRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC132F461D85B0CB005793E1 /* GYRootViewController.m */; };
+		FC132F9B1D85B24A005793E1 /* rose_PNG642.png in Resources */ = {isa = PBXBuildFile; fileRef = FC132F9A1D85B24A005793E1 /* rose_PNG642.png */; };
+		FC132FDC1D85B3B7005793E1 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC132FC31D85B3B6005793E1 /* CrashReporter.framework */; };
+		FC132FDD1D85B3B7005793E1 /* GYFPSMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = FC132FC61D85B3B7005793E1 /* GYFPSMonitor.m */; };
+		FC132FDF1D85B3B7005793E1 /* GYMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = FC132FCA1D85B3B7005793E1 /* GYMonitor.m */; };
+		FC132FE01D85B3B7005793E1 /* GYMonitorDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC132FCC1D85B3B7005793E1 /* GYMonitorDataCenter.m */; };
+		FC132FE11D85B3B7005793E1 /* GYFilePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC132FCF1D85B3B7005793E1 /* GYFilePreviewViewController.m */; };
+		FC132FE21D85B3B7005793E1 /* GYFilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC132FD11D85B3B7005793E1 /* GYFilesViewController.m */; };
+		FC132FE31D85B3B7005793E1 /* GYFileWalker.m in Sources */ = {isa = PBXBuildFile; fileRef = FC132FD31D85B3B7005793E1 /* GYFileWalker.m */; };
+		FC132FE41D85B3B7005793E1 /* GYIndicatorWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FC132FD51D85B3B7005793E1 /* GYIndicatorWindow.m */; };
+		FC132FE51D85B3B7005793E1 /* GYMonitorIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = FC132FD71D85B3B7005793E1 /* GYMonitorIndicator.m */; };
+		FC132FE61D85B3B7005793E1 /* GYMonitorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FC132FD91D85B3B7005793E1 /* GYMonitorUtils.m */; };
+		FC132FE71D85B3B7005793E1 /* GYReportManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC132FDB1D85B3B7005793E1 /* GYReportManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FC132EFD1D85AE2C005793E1 /* GYMonitorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYMonitorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC132F011D85AE2C005793E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC132F031D85AE2C005793E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC132F041D85AE2C005793E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC132F0C1D85AE2C005793E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC132F111D85AE2C005793E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC132F451D85B0CB005793E1 /* GYRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYRootViewController.h; sourceTree = "<group>"; };
+		FC132F461D85B0CB005793E1 /* GYRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYRootViewController.m; sourceTree = "<group>"; };
+		FC132F9A1D85B24A005793E1 /* rose_PNG642.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rose_PNG642.png; sourceTree = "<group>"; };
+		FC132FC31D85B3B6005793E1 /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CrashReporter.framework; sourceTree = "<group>"; };
+		FC132FC51D85B3B7005793E1 /* GYFPSMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFPSMonitor.h; sourceTree = "<group>"; };
+		FC132FC61D85B3B7005793E1 /* GYFPSMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFPSMonitor.m; sourceTree = "<group>"; };
+		FC132FC91D85B3B7005793E1 /* GYMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMonitor.h; sourceTree = "<group>"; };
+		FC132FCA1D85B3B7005793E1 /* GYMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMonitor.m; sourceTree = "<group>"; };
+		FC132FCB1D85B3B7005793E1 /* GYMonitorDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMonitorDataCenter.h; sourceTree = "<group>"; };
+		FC132FCC1D85B3B7005793E1 /* GYMonitorDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMonitorDataCenter.m; sourceTree = "<group>"; };
+		FC132FCE1D85B3B7005793E1 /* GYFilePreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFilePreviewViewController.h; sourceTree = "<group>"; };
+		FC132FCF1D85B3B7005793E1 /* GYFilePreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFilePreviewViewController.m; sourceTree = "<group>"; };
+		FC132FD01D85B3B7005793E1 /* GYFilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFilesViewController.h; sourceTree = "<group>"; };
+		FC132FD11D85B3B7005793E1 /* GYFilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFilesViewController.m; sourceTree = "<group>"; };
+		FC132FD21D85B3B7005793E1 /* GYFileWalker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFileWalker.h; sourceTree = "<group>"; };
+		FC132FD31D85B3B7005793E1 /* GYFileWalker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFileWalker.m; sourceTree = "<group>"; };
+		FC132FD41D85B3B7005793E1 /* GYIndicatorWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYIndicatorWindow.h; sourceTree = "<group>"; };
+		FC132FD51D85B3B7005793E1 /* GYIndicatorWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYIndicatorWindow.m; sourceTree = "<group>"; };
+		FC132FD61D85B3B7005793E1 /* GYMonitorIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMonitorIndicator.h; sourceTree = "<group>"; };
+		FC132FD71D85B3B7005793E1 /* GYMonitorIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMonitorIndicator.m; sourceTree = "<group>"; };
+		FC132FD81D85B3B7005793E1 /* GYMonitorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMonitorUtils.h; sourceTree = "<group>"; };
+		FC132FD91D85B3B7005793E1 /* GYMonitorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMonitorUtils.m; sourceTree = "<group>"; };
+		FC132FDA1D85B3B7005793E1 /* GYReportManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYReportManager.h; sourceTree = "<group>"; };
+		FC132FDB1D85B3B7005793E1 /* GYReportManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYReportManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC132EFA1D85AE2C005793E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC132FDC1D85B3B7005793E1 /* CrashReporter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC132EF41D85AE2C005793E1 = {
+			isa = PBXGroup;
+			children = (
+				FC132EFF1D85AE2C005793E1 /* GYMonitorExample */,
+				FC132EFE1D85AE2C005793E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC132EFE1D85AE2C005793E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC132EFD1D85AE2C005793E1 /* GYMonitorExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC132EFF1D85AE2C005793E1 /* GYMonitorExample */ = {
+			isa = PBXGroup;
+			children = (
+				FC132FC21D85B3B6005793E1 /* GYMonitor */,
+				FC132F031D85AE2C005793E1 /* AppDelegate.h */,
+				FC132F041D85AE2C005793E1 /* AppDelegate.m */,
+				FC132F451D85B0CB005793E1 /* GYRootViewController.h */,
+				FC132F461D85B0CB005793E1 /* GYRootViewController.m */,
+				FC132F9A1D85B24A005793E1 /* rose_PNG642.png */,
+				FC132F0C1D85AE2C005793E1 /* Assets.xcassets */,
+				FC132F111D85AE2C005793E1 /* Info.plist */,
+				FC132F001D85AE2C005793E1 /* Supporting Files */,
+			);
+			path = GYMonitorExample;
+			sourceTree = "<group>";
+		};
+		FC132F001D85AE2C005793E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC132F011D85AE2C005793E1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC132FC21D85B3B6005793E1 /* GYMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				FC132FC31D85B3B6005793E1 /* CrashReporter.framework */,
+				FC132FC41D85B3B7005793E1 /* FPS */,
+				FC132FCD1D85B3B7005793E1 /* Utils */,
+				FC132FC91D85B3B7005793E1 /* GYMonitor.h */,
+				FC132FCA1D85B3B7005793E1 /* GYMonitor.m */,
+				FC132FCB1D85B3B7005793E1 /* GYMonitorDataCenter.h */,
+				FC132FCC1D85B3B7005793E1 /* GYMonitorDataCenter.m */,
+			);
+			path = GYMonitor;
+			sourceTree = SOURCE_ROOT;
+		};
+		FC132FC41D85B3B7005793E1 /* FPS */ = {
+			isa = PBXGroup;
+			children = (
+				FC132FC51D85B3B7005793E1 /* GYFPSMonitor.h */,
+				FC132FC61D85B3B7005793E1 /* GYFPSMonitor.m */,
+			);
+			path = FPS;
+			sourceTree = "<group>";
+		};
+		FC132FCD1D85B3B7005793E1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FC132FD41D85B3B7005793E1 /* GYIndicatorWindow.h */,
+				FC132FD51D85B3B7005793E1 /* GYIndicatorWindow.m */,
+				FC132FD61D85B3B7005793E1 /* GYMonitorIndicator.h */,
+				FC132FD71D85B3B7005793E1 /* GYMonitorIndicator.m */,
+				FC132FD01D85B3B7005793E1 /* GYFilesViewController.h */,
+				FC132FD11D85B3B7005793E1 /* GYFilesViewController.m */,
+				FC132FCE1D85B3B7005793E1 /* GYFilePreviewViewController.h */,
+				FC132FCF1D85B3B7005793E1 /* GYFilePreviewViewController.m */,
+				FC132FD21D85B3B7005793E1 /* GYFileWalker.h */,
+				FC132FD31D85B3B7005793E1 /* GYFileWalker.m */,
+				FC132FD81D85B3B7005793E1 /* GYMonitorUtils.h */,
+				FC132FD91D85B3B7005793E1 /* GYMonitorUtils.m */,
+				FC132FDA1D85B3B7005793E1 /* GYReportManager.h */,
+				FC132FDB1D85B3B7005793E1 /* GYReportManager.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC132EFC1D85AE2C005793E1 /* GYMonitorExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC132F141D85AE2C005793E1 /* Build configuration list for PBXNativeTarget "GYMonitorExample" */;
+			buildPhases = (
+				FC132EF91D85AE2C005793E1 /* Sources */,
+				FC132EFA1D85AE2C005793E1 /* Frameworks */,
+				FC132EFB1D85AE2C005793E1 /* Resources */,
+				FC132F411D85AFD3005793E1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GYMonitorExample;
+			productName = GYMonitorExample;
+			productReference = FC132EFD1D85AE2C005793E1 /* GYMonitorExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC132EF51D85AE2C005793E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = none;
+				TargetAttributes = {
+					FC132EFC1D85AE2C005793E1 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = P3S77DVGXP;
+					};
+				};
+			};
+			buildConfigurationList = FC132EF81D85AE2C005793E1 /* Build configuration list for PBXProject "GYMonitorExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC132EF41D85AE2C005793E1;
+			productRefGroup = FC132EFE1D85AE2C005793E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC132EFC1D85AE2C005793E1 /* GYMonitorExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC132EFB1D85AE2C005793E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC132F0D1D85AE2C005793E1 /* Assets.xcassets in Resources */,
+				FC132F9B1D85B24A005793E1 /* rose_PNG642.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FC132F411D85AFD3005793E1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "python ${PROJECT_DIR}/dsymInfo/backup.py";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC132EF91D85AE2C005793E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC132FE51D85B3B7005793E1 /* GYMonitorIndicator.m in Sources */,
+				FC132FE41D85B3B7005793E1 /* GYIndicatorWindow.m in Sources */,
+				FC132F471D85B0CB005793E1 /* GYRootViewController.m in Sources */,
+				FC132FE11D85B3B7005793E1 /* GYFilePreviewViewController.m in Sources */,
+				FC132FE31D85B3B7005793E1 /* GYFileWalker.m in Sources */,
+				FC132FE01D85B3B7005793E1 /* GYMonitorDataCenter.m in Sources */,
+				FC132FE71D85B3B7005793E1 /* GYReportManager.m in Sources */,
+				FC132FDF1D85B3B7005793E1 /* GYMonitor.m in Sources */,
+				FC132FE61D85B3B7005793E1 /* GYMonitorUtils.m in Sources */,
+				FC132F051D85AE2C005793E1 /* AppDelegate.m in Sources */,
+				FC132FDD1D85B3B7005793E1 /* GYFPSMonitor.m in Sources */,
+				FC132FE21D85B3B7005793E1 /* GYFilesViewController.m in Sources */,
+				FC132F021D85AE2C005793E1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FC132F121D85AE2C005793E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC132F131D85AE2C005793E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC132F151D85AE2C005793E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GYMonitorExample/GYMonitor",
+					"$(PROJECT_DIR)/GYMonitorExample/GYMonitor/Frameworks",
+					"$(PROJECT_DIR)/GYMonitor",
+					"$(PROJECT_DIR)/GYMonitor/Frameworks",
+				);
+				INFOPLIST_FILE = GYMonitorExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.featuretower.GYMonitorExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		FC132F161D85AE2C005793E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GYMonitorExample/GYMonitor",
+					"$(PROJECT_DIR)/GYMonitorExample/GYMonitor/Frameworks",
+					"$(PROJECT_DIR)/GYMonitor",
+					"$(PROJECT_DIR)/GYMonitor/Frameworks",
+				);
+				INFOPLIST_FILE = GYMonitorExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.featuretower.GYMonitorExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC132EF81D85AE2C005793E1 /* Build configuration list for PBXProject "GYMonitorExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC132F121D85AE2C005793E1 /* Debug */,
+				FC132F131D85AE2C005793E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC132F141D85AE2C005793E1 /* Build configuration list for PBXNativeTarget "GYMonitorExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC132F151D85AE2C005793E1 /* Debug */,
+				FC132F161D85AE2C005793E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC132EF51D85AE2C005793E1 /* Project object */;
+}
