@@ -42,7 +42,7 @@ GYMonitor是用于监控iOS app性能状况的代码库，目前包括有FPS监�
 * 通过`CADisplayLink`获取屏幕刷新频率，输出FPS的值
 * 在子线程开启定时器监控FPS的值
 * 当FPS的值过低时，通过`CrashReporter`获取全部线程的堆栈，保存为`$currentController.crash`文件
-* 编译项目成功后通过`dsymutil`产生dSYM文件然后保存，为了节省空间最多保存5个
-* 在mac os使用`symbolicatecrash`反解堆栈，为了方便，我使用了`Automator`为右键点击*.crash文件时添加添加服务项`反解堆栈`
+* 编译项目成功后通过`dsymutil`产生dSYM文件然后保存，为了节省空间最多保存5个。还有为它们在所的目录添加Spotlight索引，反解堆栈时能让mac os自动找到它们
+* 在手机可通过点击监控条，然后用AirDrop把crash文件传输到mac上，在mac使用`symbolicatecrash`反解堆栈，为了方便，我使用了`Automator`为右键点击*.crash文件时添加服务项`反解堆栈`，点击后会运行脚本去反解堆栈。
 
 
