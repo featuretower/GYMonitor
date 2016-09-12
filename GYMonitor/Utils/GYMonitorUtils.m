@@ -54,7 +54,7 @@ result[12], result[13], result[14], result[15]]                         \
 }
 
 + (NSString *)genCrashReport {
-    PLCrashReporterSymbolicationStrategy strategy = PLCrashReporterSymbolicationStrategyObjC;
+    PLCrashReporterSymbolicationStrategy strategy = PLCrashReporterSymbolicationStrategySymbolTable;
 #if TARGET_OS_SIMULATOR
     strategy = PLCrashReporterSymbolicationStrategyAll;
 #endif

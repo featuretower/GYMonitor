@@ -16,7 +16,7 @@
 
 #define CELL_HEIGHT 30.0f
 
-@interface GYMonitorIndicator ()<GYIndicatorWindowDelegate, UITableViewDataSource, UITableViewDelegate>
+@interface GYMonitorIndicator ()<GYIndicatorWindowDelegate>
 
 @end
 
@@ -45,7 +45,7 @@
     }
     
     _window = [[GYIndicatorWindow alloc] init];
-    _window.delegate = self;
+    _window.gydelegate = self;
     _window.hidden = YES;
     
     _goodColor = [GYMonitorUtils colorWithHex:0x66a300 alpha:1.0];
@@ -170,48 +170,6 @@
     }else {
         _window.tipsButton.backgroundColor = [UIColor grayColor];
     }
-}
-
-#pragma mark - UITableViewDataSource UITableViewDelegate
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3.0f;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 45;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellId"];
-        cell.textLabel.font = [UIFont systemFontOfSize:20.0];
-    }
-    if (indexPath.row == 0) {
-        cell.textLabel.text = @"浏览文件";
-    } else if (indexPath.row == 1) {
-        cell.textLabel.text = @"实时fps";
-    } else if (indexPath.row == 2) {
-        cell.textLabel.text = @"显示卡顿";
-    }
-    return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        GYMLog(@"select showFileVC");
-        [self showFileVC];
-    } else if (indexPath.row == 1) {
-        self.showType = GYShowTypeFPS;
-        GYMLog(@"select ShowTypeFPS");
-    } else if (indexPath.row == 2) {
-        self.showType = GYShowTypeBadStat;
-        GYMLog(@"select ShowTypeBadStat");
-    }
-    [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    tableView.hidden = YES;
-    [self updateTips];
 }
 
 

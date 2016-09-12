@@ -351,12 +351,10 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/GYMonitorExample/GYMonitor",
-					"$(PROJECT_DIR)/GYMonitorExample/GYMonitor/Frameworks",
 					"$(PROJECT_DIR)/GYMonitor",
-					"$(PROJECT_DIR)/GYMonitor/Frameworks",
 				);
 				INFOPLIST_FILE = GYMonitorExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.featuretower.GYMonitorExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -373,12 +371,10 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/GYMonitorExample/GYMonitor",
-					"$(PROJECT_DIR)/GYMonitorExample/GYMonitor/Frameworks",
 					"$(PROJECT_DIR)/GYMonitor",
-					"$(PROJECT_DIR)/GYMonitor/Frameworks",
 				);
 				INFOPLIST_FILE = GYMonitorExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.featuretower.GYMonitorExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";

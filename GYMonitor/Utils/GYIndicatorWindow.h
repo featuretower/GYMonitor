@@ -20,7 +20,6 @@
 
 @property (nonatomic, strong) UIButton *tipsButton;
 @property (nonatomic, strong) UIView *containerView;
-@property (nonatomic, strong) UITableView *menuTableView;
-@property (nonatomic, weak) id<GYIndicatorWindowDelegate, UITableViewDataSource, UITableViewDelegate> delegate;
+@property (nonatomic, weak) id<GYIndicatorWindowDelegate> gydelegate;
 
 @end
