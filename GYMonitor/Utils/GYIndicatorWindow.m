@@ -9,29 +9,9 @@
 #import "GYIndicatorWindow.h"
 #import "GYMonitorUtils.h"
 
-#ifndef IOS_VERSION
 #define IOS_VERSION ([[[UIDevice currentDevice] systemVersion] floatValue])
-#endif
-
-@interface GYWindowRootViewController : UIViewController
-
-@end
-
-@implementation GYWindowRootViewController
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
-    return YES;
-}
-
-- (BOOL)shouldAutorotate {
-    return YES;
-}
-
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskAll;
-}
-
-@end
+#define IS_LANDSCAPE UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation])
+#define SCREEN_WIDTH (IOS_VERSION >= 8.0 ? [[UIScreen mainScreen] bounds].size.width : (IS_LANDSCAPE ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width))
 
 @implementation GYIndicatorWindow
 
@@ -54,10 +34,11 @@
         _containerView.backgroundColor = [UIColor clearColor];
         [_containerView addSubview:_tipsButton];
         
-        self.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:.3];
+        UIViewController *winRootVC = [[UIViewController alloc] init];
+        [winRootVC.view addSubview:_containerView];
+        self.backgroundColor = [UIColor clearColor];
         self.windowLevel = UIWindowLevelStatusBar + 10.0;
-        self.rootViewController = [[UIViewController alloc] init];
-        [self addSubview:_containerView];
+        self.rootViewController = winRootVC;
         [self render];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationDidChange:) name:UIDeviceOrientationDidChangeNotification object:nil];
@@ -71,12 +52,14 @@
     }
 }
 
+
+
 - (void)render {
-    CGFloat screenWidth = self.frame.size.width;
+    CGFloat screenWidth = SCREEN_WIDTH;
     CGFloat containerWidth = 75;
     CGFloat statusBarWidth = screenWidth;
     CGFloat statusBarHeight = 20;
-    if (UIDeviceOrientationIsLandscape((UIDeviceOrientation)[UIApplication sharedApplication].statusBarOrientation)) {
+    if (IS_LANDSCAPE) {
         _containerView.frame = CGRectMake(screenWidth - containerWidth * 1.5, 0, containerWidth, statusBarHeight);
     } else {
         _containerView.frame = CGRectMake(statusBarWidth - containerWidth * 1.5, 0, containerWidth, statusBarHeight);
