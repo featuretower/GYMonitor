@@ -32,10 +32,15 @@ GYMonitor是用于监控iOS app性能状况的代码库，目前包括有FPS监�
 ```
 
 ## 运行效果
-![(fps低)](https://raw.githubusercontent.com/featuretower/GYMonitor/master/GYMonitorExample/Screenshots/slow.png)
-![(fps卡顿)](https://github.com/featuretower/GYMonitor/blob/master/GYMonitorExample/Screenshots/stuck.png?raw=true)
-![(模拟器上的堆栈)](https://github.com/featuretower/GYMonitor/blob/master/GYMonitorExample/Screenshots/stack_sim.png?raw=true)
-![(反解堆栈菜单)](https://github.com/featuretower/GYMonitor/blob/master/GYMonitorExample/Screenshots/symblic.jpg?raw=true)
+* 在模拟器/真机（真机只能看到部分符号）
+
+<img src="https://raw.githubusercontent.com/featuretower/GYMonitor/master/GYMonitorExample/Screenshots/slow.png" width = "30%" height = "30%" alt="fps低" align=center />
+<img src="https://github.com/featuretower/GYMonitor/blob/master/GYMonitorExample/Screenshots/stuck.png?raw=true" width = "30%" height = "30%" alt="fps卡顿" align=center />
+<img src="https://github.com/featuretower/GYMonitor/blob/master/GYMonitorExample/Screenshots/stack_sim.png?raw=true" width = "30%" height = "30%" alt="模拟器上的堆栈" align=center />
+
+* 在mac上反解
+
+<img src="https://github.com/featuretower/GYMonitor/blob/master/GYMonitorExample/Screenshots/symblic.jpg?raw=true" width = "30%" height = "30%" alt="反解堆栈菜单" align=center />
 ![(mac上反解结果)](https://github.com/featuretower/GYMonitor/blob/master/GYMonitorExample/Screenshots/stack_mac.jpg?raw=true)
 
 ## 原理
