@@ -9,10 +9,38 @@
 #import "GYIndicatorWindow.h"
 #import "GYMonitorUtils.h"
 
+#ifndef IOS_VERSION
+#define IOS_VERSION ([[[UIDevice currentDevice] systemVersion] floatValue])
+#endif
+
+@interface GYWindowRootViewController : UIViewController
+
+@end
+
+@implementation GYWindowRootViewController
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    return YES;
+}
+
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
+}
+
+@end
+
 @implementation GYIndicatorWindow
 
 - (instancetype)init {
-    self = [super init];
+    if (IOS_VERSION >= 9.0) {
+        self = [super init];
+    } else {
+        self = [super initWithFrame:[UIScreen mainScreen].bounds];
+    }
     if (self) {
         _tipsButton = [[UIButton alloc] init];
         _tipsButton.backgroundColor = [UIColor grayColor];
@@ -26,7 +54,7 @@
         _containerView.backgroundColor = [UIColor clearColor];
         [_containerView addSubview:_tipsButton];
         
-        self.backgroundColor = [UIColor clearColor];
+        self.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:.3];
         self.windowLevel = UIWindowLevelStatusBar + 10.0;
         self.rootViewController = [[UIViewController alloc] init];
         [self addSubview:_containerView];

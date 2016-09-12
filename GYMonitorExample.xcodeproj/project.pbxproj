@@ -23,6 +23,7 @@
 		FC132FE51D85B3B7005793E1 /* GYMonitorIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = FC132FD71D85B3B7005793E1 /* GYMonitorIndicator.m */; };
 		FC132FE61D85B3B7005793E1 /* GYMonitorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FC132FD91D85B3B7005793E1 /* GYMonitorUtils.m */; };
 		FC132FE71D85B3B7005793E1 /* GYReportManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC132FDB1D85B3B7005793E1 /* GYReportManager.m */; };
+		FC92B7051D86A6B600D2BD31 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC92B7041D86A6B600D2BD31 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		FC132FD91D85B3B7005793E1 /* GYMonitorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMonitorUtils.m; sourceTree = "<group>"; };
 		FC132FDA1D85B3B7005793E1 /* GYReportManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYReportManager.h; sourceTree = "<group>"; };
 		FC132FDB1D85B3B7005793E1 /* GYReportManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYReportManager.m; sourceTree = "<group>"; };
+		FC92B7041D86A6B600D2BD31 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				FC132F461D85B0CB005793E1 /* GYRootViewController.m */,
 				FC132F9A1D85B24A005793E1 /* rose_PNG642.png */,
 				FC132F0C1D85AE2C005793E1 /* Assets.xcassets */,
+				FC92B7041D86A6B600D2BD31 /* Launch Screen.storyboard */,
 				FC132F111D85AE2C005793E1 /* Info.plist */,
 				FC132F001D85AE2C005793E1 /* Supporting Files */,
 			);
@@ -213,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC92B7051D86A6B600D2BD31 /* Launch Screen.storyboard in Resources */,
 				FC132F0D1D85AE2C005793E1 /* Assets.xcassets in Resources */,
 				FC132F9B1D85B24A005793E1 /* rose_PNG642.png in Resources */,
 			);
@@ -346,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -356,7 +361,7 @@
 				INFOPLIST_FILE = GYMonitorExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.featuretower.GYMonitorExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.featuretower.dfwefwef.t;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -366,6 +371,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -376,7 +382,7 @@
 				INFOPLIST_FILE = GYMonitorExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.featuretower.GYMonitorExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.featuretower.dfwefwef.t;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
