@@ -40,7 +40,7 @@ GYMonitor是用于监控iOS app性能状况的代码库，目前包括有FPS监�
 
 * 在mac上反解
 
-<img src="https://github.com/featuretower/GYMonitor/blob/master/GYMonitorExample/Screenshots/symblic.jpg?raw=true" width = "30%" height = "30%" alt="反解堆栈菜单" align=center />
+![(反解堆栈菜单)](https://github.com/featuretower/GYMonitor/blob/master/GYMonitorExample/Screenshots/symblic.jpg?raw=true)
 ![(mac上反解结果)](https://github.com/featuretower/GYMonitor/blob/master/GYMonitorExample/Screenshots/stack_mac.jpg?raw=true)
 
 ## 原理
