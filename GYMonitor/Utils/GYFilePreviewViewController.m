@@ -33,15 +33,15 @@
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"AirDrop" style:UIBarButtonItemStylePlain target:self action:@selector(handleAirDrop:)];
     
+    _webView = [[UIWebView alloc] init];
+    _webView.hidden = YES;
+    [self.view addSubview:_webView];
+    
     _loadingView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     [_loadingView startAnimating];
     [self.view addSubview:_loadingView];
     
     [self reloadData];
-    
-    _webView = [[UIWebView alloc] init];
-    _webView.hidden = YES;
-    [self.view addSubview:_webView];
 }
 
 - (void)viewDidLayoutSubviews {
