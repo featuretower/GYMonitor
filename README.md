@@ -2,6 +2,16 @@
 GYMonitor是用于监控iOS app性能状况的代码库，目前包括有FPS监控，发现FPS过低会自动产生堆栈，便于在开发过程中发现卡顿问题。
 
 ## 安装
+
+### 使用CocoaPods
+```ruby
+# Podfile
+platform :ios, '7.0'
+target 'YourTarget'
+pod 'GYMonitor'
+```
+
+### 手工导入
 * 拖动`GYMonitor`整个文件夹到已有的Xcode工程。值得注意的是`GYMonitor`里面有`CrashReporter.framework`这个库。
 * 包含头文件`#import "GYMonitor.h"`
 * 将`dsymInfo`文件夹拷贝到工程文件的同一个目录，然后在工程文件中的`Build Phases`最后加上一个`Run Script`，脚本内容为`python ${PROJECT_DIR}/dsymInfo/backup.py`
